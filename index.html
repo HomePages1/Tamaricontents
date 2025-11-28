@@ -1,63 +1,144 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>メイク初心者向けロードマップ｜可愛くなる完全ガイド</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TamaRi｜メイク初心者・垢抜けガイド（公式）</title>
+  <meta name="description" content="メイク初心者でも今日から垢抜ける。プチプラ中心の実践メソッドを動画と記事で解説。">
+  <meta name="keywords" content="メイク初心者, 垢抜け, プチプラ, CANMAKE, GU, コスメ" />
+
+  <!-- favicon（既存の favicon.png を使用） -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- パフォーマンス：プリコネクト & CSS preload -->
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+  <link rel="preconnect" href="https://img.youtube.com" crossorigin>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 検索とSNS用 -->
+  <meta property="og:title" content="TamaRi｜メイク×ファッションで今日から垢抜ける">
+  <meta property="og:description" content="初心者でも真似できるメイク・コーデ術を動画と記事で発信中。">
+  <meta property="og:image" content="https://img.youtube.com/vi/2EfxidI4AdE/hqdefault.jpg">
 </head>
 <body>
 
-<header>
-    <img src="favicon.png" class="site-icon" alt="icon">
-    <h1>メイク初心者でも可愛くなれる！完全ロードマップ</h1>
-    <p>最短で「可愛い」を作るためのガイド</p>
+<!-- ===== HEADER ===== -->
+<header class="site-header" role="banner">
+  <div class="header-left">
+    <!-- favicon.png が同ディレクトリにある前提 -->
+    <img src="favicon.png" alt="TamaRi アイコン" class="site-logo" width="48" height="48" loading="lazy">
+    <div>
+      <h1 class="site-title">TamaRi｜初心者でも可愛くなれる</h1>
+      <p class="site-sub">メイク×ファッションで“0→1”の変化を</p>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <!-- 固定幅で崩れないチャンネル登録ボタン -->
+    <a class="subscribe-btn" href="https://www.youtube.com/channel/UC_GVyATt4ZZFa6GnnkZ162w?sub_confirmation=1" target="_blank" rel="noopener">♥ チャンネル登録</a>
+  </div>
 </header>
 
-<section class="video-section">
-    <h2>まずはこの動画を見てね</h2>
+<main class="container" role="main">
+  <!-- ===== HERO / VIDEO ===== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <h2 id="hero-title">まずはこの動画をチェック（クリックで再生）</h2>
+    <p class="lead">動画で見て、記事で復習。初心者向けのやさしい手順だけを集めました。</p>
 
-    <!-- ✨おしゃれサムネカード -->
-    <a href="https://youtu.be/2EfxidI4AdE" class="yt-card" target="_blank">
-        <div class="yt-thumb-wrap">
-            <img src="https://img.youtube.com/vi/2EfxidI4AdE/maxresdefault.jpg" alt="動画サムネ" class="yt-thumb">
-            <div class="yt-overlay">
-                <span class="play-btn">▶</span>
-            </div>
-        </div>
-        <p class="yt-title">初心者向けメイクのスタートガイド</p>
-    </a>
-</section>
+    <!-- ★ 高速サムネ表示カード（クリックで iframe を読み込む） -->
+    <div class="video-card" data-video-id="2EfxidI4AdE" aria-label="動画カード" role="region">
+      <!-- サムネ（常に表示） -->
+      <button type="button" class="thumb-btn" aria-label="動画を再生する">
+        <img class="thumb-img" src="https://img.youtube.com/vi/2EfxidI4AdE/hqdefault.jpg" alt="動画サムネ" loading="lazy">
+        <span class="thumb-overlay" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="play-icon" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg>
+        </span>
+      </button>
+      <!-- iframe が挿入される領域（初期は空） -->
+      <div class="iframe-wrap" aria-hidden="true"></div>
+      <p class="video-caption">【短時間でできる】初心者向けメイクのスタートガイド</p>
+    </div>
+  </section>
 
-<hr>
-
-<section>
-    <h2>初心者向けメイク記事まとめ</h2>
+  <!-- ===== ARTICLES LIST ===== -->
+  <section aria-labelledby="articles-title">
+    <h2 id="articles-title">人気記事（初心者向け）</h2>
     <ul class="article-links">
-        <li><a href="article-makeup-1.html">【記事1】メイク初心者が最初に覚えるべきこと</a></li>
-        <li><a href="article-makeup-2.html">【記事2】絶対に失敗しないコスメの選び方</a></li>
-        <li><a href="article-makeup-3.html">【記事3】初心者向けベースメイク完全ガイド</a></li>
-        <li><a href="article-makeup-4.html">【記事4】プチプラで可愛くなる方法まとめ</a></li>
-        <li><a href="article-makeup-5.html">【記事5】垢抜けるメイクの順番</a></li>
-        <li><a href="article-makeup-6.html">【記事6】初心者のための保存版メイクロードマップ</a></li>
+      <li><a href="article-makeup-1.html">① メイク初心者が最初に覚えるべきこと</a></li>
+      <li><a href="article-makeup-2.html">② 絶対に失敗しないコスメの選び方</a></li>
+      <li><a href="article-makeup-3.html">③ ベースメイク完全ガイド</a></li>
+      <li><a href="article-makeup-4.html">④ プチプラで可愛くなる方法まとめ</a></li>
+      <li><a href="article-makeup-5.html">⑤ 垢抜けるメイクの順番</a></li>
+      <li><a href="article-makeup-6.html">⑥ 保存版メイクロードマップ</a></li>
     </ul>
-</section>
+  </section>
 
-<hr>
-
-<section>
-    <h2>ブランド別で可愛くなる</h2>
+  <!-- ===== BRAND LINKS ===== -->
+  <section aria-labelledby="brand-title">
+    <h2 id="brand-title">ブランド別で可愛くなる</h2>
     <ul class="article-links">
-        <li><a href="canmake-make-beginner.html">CANMAKEで作る初心者メイク</a></li>
-        <li><a href="gu-otokunaru-kotu.html">GUで垢抜けるコーデのコツ</a></li>
+      <li><a href="canmake-make-beginner.html">CANMAKEで作る初心者メイク</a></li>
+      <li><a href="gu-otokunaru-kotu.html">GUで垢抜けるコーデのコツ</a></li>
     </ul>
-</section>
+  </section>
+</main>
 
 <footer>
-    <p>© 2025 メイク初心者ロードマップ</p>
+  <p>© 2025 TamaRi</p>
 </footer>
+
+<!-- ===== Inline JS: クリックでiframeを遅延読み込み（軽量, no external lib） ===== -->
+<script>
+(function(){
+  // 対象カードを取得（将来複数対応）
+  const card = document.querySelector('.video-card');
+  if(!card) return;
+  const btn = card.querySelector('.thumb-btn');
+  const img = card.querySelector('.thumb-img');
+  const wrap = card.querySelector('.iframe-wrap');
+  const vid = card.dataset.videoId;
+
+  // make iframe responsive when inserted
+  function createIframe(videoId){
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1';
+    iframe.title = 'TamaRi 動画';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.frameBorder = '0';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.loading = 'lazy';
+    return iframe;
+  }
+
+  function showPlayer(){
+    if(wrap.dataset.loaded === '1') return;
+    // hide thumbnail button
+    btn.style.display = 'none';
+    // prepare wrapper for 16:9 iframe
+    wrap.style.position = 'relative';
+    wrap.style.paddingBottom = '56.25%';
+    wrap.style.height = '0';
+    wrap.style.overflow = 'hidden';
+    wrap.style.borderRadius = '14px';
+    // insert iframe
+    const ifr = createIframe(vid);
+    wrap.appendChild(ifr);
+    wrap.dataset.loaded = '1';
+    wrap.setAttribute('aria-hidden','false');
+  }
+
+  btn.addEventListener('click', showPlayer);
+  btn.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showPlayer(); }
+  });
+})();
+</script>
 
 </body>
 </html>
-
 
